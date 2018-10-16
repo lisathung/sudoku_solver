@@ -39,7 +39,7 @@ def findNextCellToFill(cells, key):
 
 def isValid(cells,key,num):
 	"""
-	function for checking if the number of cell is not present in any of its peers, if double is found puzzle is invalid
+	function for checking if the value of a cell is not present in any of its peers
 	Input: list of GUI cells, key, number being tested
 	Output: If num is not present in peers of key, it is valid. Return true, False otherwise
 	"""
@@ -96,7 +96,7 @@ def masterSolve(cells,cell_values):
 def createGrid(cell_values):
 	"""
 	Function for creating Inital Grid
-	Input: list of squares
+	Input: list of cell values
 	Output: creates sudoku board
 	"""
 	cells = [None for i in range(size**2)] #stores cells of grid
